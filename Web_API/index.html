@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý hàng hóa</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        th { background-color: lightgray; }
+        button { padding: 5px 10px; margin: 2px; }
+        input { padding: 5px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Danh sách hàng hóa</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã Hàng Hóa</th>
+                <th>Tên Hàng Hóa</th>
+                <th>Số Lượng</th>
+                <th>Ghi Chú</th>
+                <th>Hành Động</th>
+            </tr>
+        </thead>
+        <tbody id="goodsTableBody"></tbody>
+    </table>
+
+    <h2>Thêm Hàng Hóa</h2>
+    <input type="text" id="maHangHoa" placeholder="Mã hàng hóa (9 ký tự)" maxlength="9">
+    <input type="text" id="tenHangHoa" placeholder="Tên hàng hóa">
+    <input type="number" id="soLuong" placeholder="Số lượng">
+    <input type="text" id="ghiChu" placeholder="Ghi chú">
+    <button onclick="createGoods()">Thêm hàng hóa</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
